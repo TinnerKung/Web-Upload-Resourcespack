@@ -1,4 +1,20 @@
+<html lang="th">
+ <head>
+   <meta charset="utf-8">
+<title>Sycer Server</title>
+<link rel="icon" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mdb/css/mdb.min.css">
+<link rel="stylesheet" href="mdb/css/bootstrap.min.css">
+<link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <style>
+* {
+    font-family: 'Sriracha', cursive;
+}
 body {
 	background-color: black;
 }
@@ -126,7 +142,7 @@ body {
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -134,12 +150,12 @@ body {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
+  from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
+  from {transform:scale(0)}
   to {transform:scale(1)}
 }
 
@@ -168,21 +184,24 @@ body {
   }
 }
 </style>
-
+</head>
+<body>
 <header>
   <br>
   <main style="" id="about">
     <div class="container">
-
+<center><font color="white">
 <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text" style="margin-top: 4em">
     <h2 class="font-weight-bold text-center h1 my-5">Upload Resources Pack</h2>
     <p class="text-center grey-text mb-5 mx-auto w-responsive">บริการอัปโหลด Resources Pack เพือการเล่นในเซิฟเวอร์</p>
 </section>
-
+</font></center>
 <font color="white">
 <hr>
 <center>
-<?php $resources_pack = isset($_GET['sp']) ? $_GET['sp'] : "page/404.html" ?>
+<?php $resources_pack = isset($_GET['sp']) ? $_GET['sp'] : "page/404.html" ;
+include "config.php";
+?>
 <p>อย่าลืมสนับสนุนพวกเราเพืออยู่รอด</p>
 <img src="https://gifimage.net/wp-content/uploads/2017/10/cirno-gif-8.gif">
 <p>วอเลท&พร้อมเพลย์ 0652366373</p>
