@@ -187,7 +187,7 @@ body {
 </head>
 <body>
 <?php
-include = "config.php";
+include "config.php";
 $FileDir = $FileDirConfig;
 $Files = glob($FileDir . '*.{zip,rar,7zip}', GLOB_BRACE);
  ?>
