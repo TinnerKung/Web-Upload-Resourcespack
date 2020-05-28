@@ -206,8 +206,8 @@ include "config.php";
 <img src="https://gifimage.net/wp-content/uploads/2017/10/cirno-gif-8.gif">
 <p>วอเลท&พร้อมเพลย์ 0652366373</p>
 <hr>
-<p>ลิงค์โหลด <strong>https://sycerclub.tk/<?php echo $resources_pack ?></strong></p>
-<p>เอาเข้า server.properties <strong>resource-pack=https\://sycerclub.tk/<?php echo $resources_pack ?></strong></p>
+<p>ลิงค์โหลด <strong><?php echo $resourcespack_view ?><?php echo $resources_pack ?></strong></p>
+<p>เอาเข้า server.properties <strong>resource-pack=<?php echo $serverminecraftresourcespacklink_view ?><?php echo $resources_pack ?></strong></p>
 <a type='button' href='<?php echo $resources_pack ?>' class='btn btn-indigo btn-sm m-0'>Download</a>
 <br>
 </font>

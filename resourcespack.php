@@ -187,8 +187,8 @@ body {
 </head>
 <body>
 <?php
-include "config.php";
-$FileDir = 'resources_pack/';
+include = "config.php";
+$FileDir = $FileDirConfig;
 $Files = glob($FileDir . '*.{zip,rar,7zip}', GLOB_BRACE);
  ?>
 <header>
@@ -221,7 +221,7 @@ $Files = glob($FileDir . '*.{zip,rar,7zip}', GLOB_BRACE);
     <td><?php echo "วันที่ ".date("F d Y H:i:s.", filemtime($File)); ?></td>
     <td><?php echo filesize($File) ?> bytes</td>
     <td>
-      <a type="button" href="resources_pack/<?php echo $File ?>" class="btn btn-indigo btn-sm m-0">Download</a>
+      <a type="button" href="https://sycerclub.tk/?page=resourcespack_view&sp=<?php echo $File ?>" class="btn btn-indigo btn-sm m-0">Download</a>
     </td>
   </tr>
      <?php } ?>
